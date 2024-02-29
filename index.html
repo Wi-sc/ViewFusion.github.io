@@ -63,10 +63,10 @@
           More Research
         </a>
         <div class="navbar-dropdown">
-          <a class="navbar-item" href="https://hypernerf.github.io">
+          <a class="navbar-item" href="https://github.com/Wi-sc/NVF">
             NVF/NVF++
           </a>
-          <a class="navbar-item" href="https://nerfies.github.io">
+          <a class="navbar-item" href="https://github.com/Wi-sc/GenMesh">
             GenMesh
           </a>
           </a>
@@ -87,20 +87,20 @@
           <div class="is-size-5 publication-authors">
             <span class="author-block">
 
-              <a href="https://keunhong.com">Xianghui Yang</a><sup>1,2</sup>,</span>
+              <a href="https://wi-sc.github.io/xianghui-yang">Xianghui Yang</a><sup>1,2</sup>,</span>
             <span class="author-block">
-              <a href="https://utkarshsinha.com">Yan Zuo</a><sup>1</sup>,</span>
+              <a href="https://www.amazon.science/author/yan-zuo">Yan Zuo</a><sup>1</sup>,</span>
             <span class="author-block">
-              <a href="https://jonbarron.info">Sameera Ramasinghe</a><sup>1</sup>,
+              <a href="https://www.amazon.science/author/sameera-ramasinghe">Sameera Ramasinghe</a><sup>1</sup>,
             </span>
             <span class="author-block">
-              <a href="http://sofienbouaziz.com">Loris Bazzani</a><sup>1</sup>,
+              <a href="https://lorisbaz.github.io/">Loris Bazzani</a><sup>1</sup>,
             </span>
             <span class="author-block">
-              <a href="https://www.danbgoldman.com">Gil Avraham</a><sup>1</sup>,
+              <a href="https://www.amazon.science/author/gil-avraham">Gil Avraham</a><sup>1</sup>,
             </span>
             <span class="author-block">
-              <a href="https://homes.cs.washington.edu/~seitz/">Anton van den Hengel</a><sup>1,3</sup>,
+              <a href="https://researchers.adelaide.edu.au/profile/anton.vandenhengel">Anton van den Hengel</a><sup>1,3</sup>,
             </span>
           </div>
 
@@ -114,7 +114,7 @@
             <div class="publication-links">
               <!-- PDF Link. -->
               <span class="link-block">
-                <a href="https://arxiv.org/pdf/2011.12948"
+                <a href=""
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fas fa-file-pdf"></i>
@@ -123,7 +123,7 @@
                 </a>
               </span>
               <span class="link-block">
-                <a href="https://arxiv.org/abs/2011.12948"
+                <a href=""
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="ai ai-arxiv"></i>
@@ -133,7 +133,7 @@
               </span>
               <!-- Video Link. -->
               <span class="link-block">
-                <a href="https://www.youtube.com/watch?v=MrKrnHhk8IA"
+                <a href=""
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fab fa-youtube"></i>
@@ -152,20 +152,59 @@
                   </a>
               </span>
               <!-- Dataset Link. -->
-              <span class="link-block">
+              <!-- <span class="link-block">
                 <a href="https://github.com/google/nerfies/releases/tag/0.1"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="far fa-images"></i>
                   </span>
                   <span>Data</span>
-                  </a>
+                  </a> -->
             </div>
 
           </div>
         </div>
       </div>
     </div>
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+          Novel-view synthesis through diffusion models has demonstrated remarkable potential for generating diverse and high-quality images. 
+          Yet, the independent process of image generation in these prevailing methods leads to challenges in maintaining multiple view consistency. 
+          </p>
+          <p>
+          To address this, we introduce ViewFusion, a novel, training-free algorithm that can be seamlessly integrated into existing pre-trained diffusion models.
+          </p>
+          <p>
+            Our approach adopts an auto-regressive method that implicitly leverages previously generated views as context for next view generation, ensuring robust multi-view consistency during the novel-view generation process. 
+            Through a diffusion process that fuses known-view information via interpolated denoising, our framework successfully extends single-view conditioned models to work in multiple-view conditional settings without any additional fine-tuning. 
+            Extensive experimental results demonstrate the effectiveness of ViewFusion in generating consistent and detailed novel views.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+
+    <!-- Paper video. -->
+    <!-- <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Video</h2>
+        <div class="publication-video">
+          <iframe src="https://www.youtube.com/embed/MrKrnHhk8IA?rel=0&amp;showinfo=0"
+                  frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div> -->
+    <!--/ Paper video. -->
   </div>
 </section>
 
@@ -177,9 +216,7 @@
                 type="video/mp4">
       </video>
       <h2 class="subtitle has-text-centered">
-        <span class="dnerf">Nerfies</span> turns selfie videos from your phone into
-        free-viewpoint
-        portraits.
+        ViewFusion generates novel-view images and promise multi-view consistentcy based on a single-view RGB image.
       </h2>
     </div>
   </div>
@@ -193,9 +230,21 @@
                 type="video/mp4">
       </video>
       <h2 class="subtitle has-text-centered">
-        <span class="dnerf">Nerfies</span> turns selfie videos from your phone into
-        free-viewpoint
-        portraits.
+        3D shape and textures can be extracted from the generated consistent multi-view images by training a Nerf model.
+      </h2>
+    </div>
+  </div>
+</section>
+
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <video id="teaser" autoplay muted loop playsinline height="100%">
+        <source src="./static/videos/real_images.mp4"
+                type="video/mp4">
+      </video>
+      <h2 class="subtitle has-text-centered">
+        Using ViewFusion you can get a novel viewpoint of a daily object and reconstruct its 3D model.
       </h2>
     </div>
   </div>
@@ -259,47 +308,10 @@
 </section> -->
 
 
-<section class="section">
-  <div class="container is-max-desktop">
-    <!-- Abstract. -->
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Abstract</h2>
-        <div class="content has-text-justified">
-          <p>
-          Novel-view synthesis through diffusion models has demonstrated remarkable potential for generating diverse and high-quality images. 
-          Yet, the independent process of image generation in these prevailing methods leads to challenges in maintaining multiple view consistency. 
-          </p>
-          <p>
-          To address this, we introduce ViewFusion, a novel, training-free algorithm that can be seamlessly integrated into existing pre-trained diffusion models.
-          </p>
-          <p>
-            Our approach adopts an auto-regressive method that implicitly leverages previously generated views as context for next view generation, ensuring robust multi-view consistency during the novel-view generation process. 
-            Through a diffusion process that fuses known-view information via interpolated denoising, our framework successfully extends single-view conditioned models to work in multiple-view conditional settings without any additional fine-tuning. 
-            Extensive experimental results demonstrate the effectiveness of ViewFusion in generating consistent and detailed novel views.
-          </p>
-        </div>
-      </div>
-    </div>
-    <!--/ Abstract. -->
-
-    <!-- Paper video. -->
-    <!-- <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Video</h2>
-        <div class="publication-video">
-          <iframe src="https://www.youtube.com/embed/MrKrnHhk8IA?rel=0&amp;showinfo=0"
-                  frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-        </div>
-      </div>
-    </div> -->
-    <!--/ Paper video. -->
-  </div>
-</section>
 
 
-<section class="section">
-  <div class="container is-max-desktop">
+<!-- <section class="section">
+  <div class="container is-max-desktop"> -->
 
     <!-- <div class="columns is-centered"> -->
 
@@ -340,9 +352,9 @@
     <!--/ Matting. -->
 
     <!-- Animation. -->
-    <div class="columns is-centered">
+    <!-- <div class="columns is-centered">
       <div class="column is-full-width">
-        <h2 class="title is-3">Animation</h2>
+        <h2 class="title is-3">Animation</h2> -->
 
         <!-- Interpolating. -->
         <!-- <h3 class="title is-4">Interpolating states</h3>
@@ -379,11 +391,10 @@
         <!--/ Interpolating. -->
 
         <!-- Re-rendering. -->
-        <h3 class="title is-4">Re-rendering the input video</h3>
+        <!-- <h3 class="title is-4">Re-rendering the input video</h3>
         <div class="content has-text-justified">
           <p>
-            Using <span class="dnerf">Nerfies</span>, you can re-render a video from a novel
-            viewpoint such as a stabilized camera by playing back the training deformations.
+            Using ViewFusion you can get a novel viewpoint of a daily object and reconstruct its 3D model.
           </p>
         </div>
         <div class="content has-text-centered">
@@ -396,11 +407,11 @@
             <source src="./static/videos/real_images.mp4"
                     type="video/mp4">
           </video>
-        </div>
+        </div> -->
         <!--/ Re-rendering. -->
 
-      </div>
-    </div>
+      <!-- </div>
+    </div> -->
     <!--/ Animation. -->
 
 
@@ -414,7 +425,7 @@
             There's a lot of excellent work that was introduced around the same time as ours.
           </p>
           <p>
-            <a href="https://arxiv.org/abs/2104.09125">Progressive Encoding for Neural Optimization</a> introduces an idea similar to our windowed position encoding for coarse-to-fine optimization.
+            <a href="https://arxiv.org/abs/2104.09125">Zero123</a> introduces an idea similar to our windowed position encoding for coarse-to-fine optimization.
           </p>
           <p>
             <a href="https://www.albertpumarola.com/research/D-NeRF/index.html">D-NeRF</a> and <a href="https://gvv.mpi-inf.mpg.de/projects/nonrigid_nerf/">NR-NeRF</a>
@@ -455,7 +466,7 @@
          href="./static/videos/nerfies_paper.pdf">
         <i class="fas fa-file-pdf"></i>
       </a>
-      <a class="icon-link" href="https://github.com/keunhong" class="external-link" disabled>
+      <a class="icon-link" href="https://github.com/wi-sc" class="external-link" disabled>
         <i class="fab fa-github"></i>
       </a>
     </div>
@@ -463,16 +474,8 @@
       <div class="column is-8">
         <div class="content">
           <p>
-            This website is licensed under a <a rel="license"
-                                                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
-            Commons Attribution-ShareAlike 4.0 International License</a>.
-          </p>
-          <p>
-            This means you are free to borrow the <a
-              href="https://github.com/nerfies/nerfies.github.io">source code</a> of this website,
-            we just ask that you link back to this page in the footer.
-            Please remember to remove the analytics code included in the header of the website which
-            you do not want on your website.
+            This website is stolen from <a
+            href="https://github.com/nerfies/nerfies.github.io">Nerf</a>. Thanks for their open-sourcing code.
           </p>
         </div>
       </div>
